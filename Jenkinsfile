@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Install tools') {
       steps {
-        tool(name: 'NodeJS14', type: 'nodejs')
+        tools(nodejs, "NodeJS14")
       }
     }
 
