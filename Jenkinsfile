@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('static coda analysis') {
+    stage('Static code analysis') {
       steps {
         sh 'npm run lint'
       }
