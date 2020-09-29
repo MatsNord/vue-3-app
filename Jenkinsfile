@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        tool(name: 'nodejs', type: 'nodejs14')
+        tool(name: 'NodeJS14', type: 'nodejs')
       }
     }
 
