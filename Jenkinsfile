@@ -1,9 +1,13 @@
 pipeline {
   agent any
+
+ nodejs('NodeJS14') {
   stages {
+
     stage('Install') {
       steps {
-        sh 'npm install'
+        sh 'npm config ls'
+        sh 'which node'
       }
     }
 
@@ -19,5 +23,6 @@ pipeline {
       }
     }
 
+  }
   }
 }
