@@ -1,7 +1,6 @@
 pipeline {
   agent any
 
- nodejs('NodeJS14') {
   stages {
 
     stage('Install') {
@@ -23,6 +22,5 @@ pipeline {
       }
     }
 
-  }
   }
 }
